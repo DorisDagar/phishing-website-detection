@@ -135,7 +135,7 @@ Multiple machine learning algorithms were trained, optimized, and evaluated to i
 
 🏆 **LightGBM Classifier**
 
-Among all tuned models, **LightGBM** achieved the highest overall performance, with an **Accuracy of 83.54%**, **Precision of 89.95%**, **Recall of 87.60%**, and an **F1-Score of 88.76%**. Its strong balance between classification metrics made it the final model selected for deployment.
+Among all tuned models, **LightGBM** achieved the highest overall performance. 
 
 ### Final Performance
 
