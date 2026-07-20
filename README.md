@@ -280,16 +280,7 @@ A comprehensive literature review was conducted by studying recent research pape
 
 Indira Gandhi Delhi Technical University for Women (IGDTUW)
 
-This project was developed as part of a **Machine Learning Internship** to demonstrate an end-to-end machine learning workflow for phishing website detection, including data preprocessing, exploratory data analysis, model development, hyperparameter tuning, model interpretability, and deployment preparation.
+*This project was developed as part of a **Machine Learning Internship** to demonstrate an end-to-end machine learning workflow for phishing website detection, including data preprocessing, exploratory data analysis, model development, hyperparameter tuning, model interpretability, and deployment preparation.*
 
 ---
 
-## 🙏 Acknowledgements
-
-- UCI Machine Learning Repository
-- Scikit-learn
-- LightGBM
-- XGBoost
-- CatBoost
-- SHAP
-- Open Source Machine Learning Community
