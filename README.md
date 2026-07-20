@@ -191,7 +191,7 @@ The project is deployment-ready and can be easily integrated into applications s
 Clone the repository:
 
 ```bash
-git clone https://github.com/<your-username>/phishing-website-detection.git
+git clone https://github.com/DorisDagar/phishing-website-detection.git
 ```
 
 Navigate to the project directory:
@@ -248,7 +248,7 @@ B.Tech Computer Science & Engineering (Artificial Intelligence)
 
 Indira Gandhi Delhi Technical University for Women (IGDTUW)
 
-This project was developed as part of a Machine Learning internship to demonstrate an end-to-end workflow for phishing website detection, covering data preprocessing, model development, model interpretability, and deployment preparation.
+*This project was developed as part of a Machine Learning internship to demonstrate an end-to-end workflow for phishing website detection, covering data preprocessing, model development, model interpretability, and deployment preparation.*
 
 ---
 
