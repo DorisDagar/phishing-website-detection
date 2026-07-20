@@ -1,0 +1,5 @@
+,Accuracy,Precision,Recall,F1 Score
+LightGBM,0.8354,0.8995,0.876,0.8876
+XGBoost,0.8317,0.8873,0.8858,0.8865
+CatBoost,0.8293,0.8806,0.8907,0.8856
+Random Forest,0.8232,0.8797,0.8825,0.8811

@@ -1,0 +1,22 @@
+# Virtual Environment
+.venv/
+
+# Python
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+
+# CatBoost
+catboost_info/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
