@@ -1,7 +1,6 @@
 ![Python](https://img.shields.io/badge/Python-3.10-blue)
 ![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-ML-orange)
 ![LightGBM](https://img.shields.io/badge/LightGBM-Model-success)
-![License](https://img.shields.io/badge/License-MIT-green)
 
 # 🛡️ Phishing Website Detection using Machine Learning
 
