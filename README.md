@@ -96,7 +96,7 @@ Deployment Preparation
 
 ## 🤖 Machine Learning Models Implemented
 
-The following machine learning models were implemented and compared:
+The following supervised machine learning algorithms were implemented and evaluated:
 
 - Logistic Regression
 - Decision Tree
@@ -105,13 +105,37 @@ The following machine learning models were implemented and compared:
 - CatBoost
 - LightGBM
 
+Among these, **Random Forest, XGBoost, CatBoost, and LightGBM** were further optimized using **GridSearchCV** for hyperparameter tuning to improve their predictive performance.
+
 ---
 
-## 🏆 Best Model
+## 🏆 Results
 
-**LightGBM Classifier**
+Multiple machine learning algorithms were trained, optimized, and evaluated to identify the most effective classifier for phishing website detection.
 
-After comparing multiple machine learning models and performing hyperparameter tuning, **LightGBM** achieved the best overall performance and was selected as the final model for deployment.
+### Tuned Model Performance
+
+| Model | Accuracy | Precision | Recall | F1-Score |
+|--------|---------:|----------:|-------:|---------:|
+| Random Forest | 82.32% | 87.97% | 88.25% | 88.11% |
+| XGBoost | 83.17% | 88.73% | 88.58% | 88.65% |
+| CatBoost | 82.93% | 88.06% | 89.07% | 88.56% |
+| **LightGBM** | **83.54%** | **89.95%** | **87.60%** | **88.76%** |
+
+### Baseline vs Tuned Model Comparison (F1-Score)
+
+| Model | Baseline | Tuned | Improvement |
+|--------|---------:|------:|------------:|
+| Random Forest | 86.61% | 88.11% | **+1.50%** |
+| XGBoost | 87.72% | 88.65% | **+0.93%** |
+| LightGBM | 88.12% | **88.76%** | **+0.64%** |
+| CatBoost | **88.56%** | **88.56%** | **0.00%** |
+
+### Final Model
+
+🏆 **LightGBM Classifier**
+
+Among all tuned models, **LightGBM** achieved the highest overall performance, with an **Accuracy of 83.54%**, **Precision of 89.95%**, **Recall of 87.60%**, and an **F1-Score of 88.76%**. Its strong balance between classification metrics made it the final model selected for deployment.
 
 ### Final Performance
 
@@ -128,7 +152,7 @@ The tuned **LightGBM** model achieved the highest overall performance among all 
 
 ## 📈 Evaluation Metrics
 
-The models were evaluated using:
+The performance of the machine learning models was evaluated using the following classification metrics:
 
 - Accuracy
 - Precision
@@ -137,6 +161,8 @@ The models were evaluated using:
 - Confusion Matrix
 - Classification Report
 
+These metrics provide a comprehensive assessment of model performance and enable meaningful comparisons between baseline and tuned models.
+
 ---
 
 ## 🔍 Model Interpretability
@@ -144,23 +170,23 @@ The models were evaluated using:
 To improve model transparency and interpretability, the following Explainable AI (XAI) techniques were used:
 
 - Feature Importance
-- SHAP (SHapley Additive exPlanations) curve
+- SHAP (SHapley Additive exPlanations) Summary Plot
 
-These techniques provide insights into how individual features influence the model's predictions, making the model more transparent and trustworthy.
+These techniques help explain how individual features influence the model's predictions, making the model more transparent, interpretable, and trustworthy.
 
 ---
 
 ## 🚀 Deployment
 
-The trained LightGBM model has been prepared for deployment by:
+The trained **LightGBM** model has been prepared for deployment by:
 
 - Saving the trained model
 - Loading the saved model
 - Creating reusable prediction helper functions
-- Testing the prediction pipeline
-- Saving feature names required for inference
+- Testing the complete prediction pipeline
+- Saving feature names required during inference
 
-The project is deployment-ready and can be easily integrated into applications such as a Streamlit web application.
+The project is deployment-ready and can be easily integrated into web applications such as **Streamlit** for real-time phishing website detection.
 
 ---
 
@@ -178,6 +204,17 @@ The project is deployment-ready and can be easily integrated into applications s
 - SHAP
 - Joblib
 - Jupyter Notebook
+
+---
+
+## 📌 Key Highlights
+
+- ✅ End-to-end Machine Learning project
+- ✅ Comparative analysis of multiple classification models
+- ✅ Hyperparameter tuning using GridSearchCV
+- ✅ Model interpretability using SHAP
+- ✅ Deployment-ready LightGBM model
+- ✅ Modular and beginner-friendly Jupyter notebooks
 
 ---
 
@@ -222,8 +259,8 @@ Run the notebooks in the following order:
 ## 📌 Future Improvements
 
 - Develop a Streamlit web application for real-time phishing website detection.
-- Evaluate the model using multiple phishing website datasets.
-- Perform cross-dataset validation to improve generalization.
+- Evaluate the model on multiple phishing website datasets to improve robustness.
+- Perform cross-dataset validation to assess model generalization.
 - Explore deep learning approaches for phishing website detection.
 - Deploy the application on a cloud platform for public access.
 
@@ -239,11 +276,11 @@ A comprehensive literature review was conducted by studying recent research pape
 
 **Doris Dagar**
 
-B.Tech Computer Science & Engineering (Artificial Intelligence)
+**B.Tech in Computer Science & Engineering (Artificial Intelligence)**
 
 Indira Gandhi Delhi Technical University for Women (IGDTUW)
 
-*This project was developed as part of a Machine Learning internship to demonstrate an end-to-end workflow for phishing website detection, covering data preprocessing, model development, model interpretability, and deployment preparation.*
+This project was developed as part of a **Machine Learning Internship** to demonstrate an end-to-end machine learning workflow for phishing website detection, including data preprocessing, exploratory data analysis, model development, hyperparameter tuning, model interpretability, and deployment preparation.
 
 ---
 
