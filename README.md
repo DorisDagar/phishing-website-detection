@@ -102,9 +102,6 @@ The following machine learning models were implemented and compared:
 - Logistic Regression
 - Decision Tree
 - Random Forest
-- Support Vector Machine (SVM)
-- K-Nearest Neighbors (KNN)
-- AdaBoost
 - XGBoost
 - CatBoost
 - LightGBM
@@ -139,7 +136,6 @@ The models were evaluated using:
 - Recall
 - F1-Score
 - Confusion Matrix
-- ROC Curve
 - Classification Report
 
 ---
@@ -149,7 +145,7 @@ The models were evaluated using:
 To improve model transparency and interpretability, the following Explainable AI (XAI) techniques were used:
 
 - Feature Importance
-- SHAP (SHapley Additive exPlanations)
+- SHAP (SHapley Additive exPlanations) curve
 
 These techniques provide insights into how individual features influence the model's predictions, making the model more transparent and trustworthy.
 
