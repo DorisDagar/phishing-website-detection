@@ -200,7 +200,7 @@ Among all tuned models, **LightGBM** achieved the highest overall performance.
 | **Recall** | **87.60%** |
 | **F1-Score** | **88.76%** |
 
-The tuned **LightGBM** model achieved the highest overall performance among all evaluated models and was therefore selected as the final model for deployment.
+The tuned **LightGBM** model achieved the highest overall performance among all evaluated models and was therefore selected as the final model for further inference and deployment preparation..
 
 ---
 
@@ -267,7 +267,7 @@ The trained model has been saved and tested for feature-based inference. A user-
 - ✅ Comparative analysis of multiple classification models
 - ✅ Hyperparameter tuning using GridSearchCV
 - ✅ Model interpretability using SHAP
-- ✅ Deployment-ready LightGBM model
+- ✅ Saved and validated LightGBM model for feature-based inference
 - ✅ Modular and beginner-friendly Jupyter notebooks
 
 ---
