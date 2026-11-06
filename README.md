@@ -240,7 +240,7 @@ The trained **LightGBM** model has been prepared for deployment by:
 - Testing the complete prediction pipeline
 - Saving feature names required during inference
 
-The project is deployment-ready and can be easily integrated into web applications such as **Streamlit** for real-time phishing website detection.
+The trained model has been saved and tested for feature-based inference. A user-facing application remains future work.
 
 ---
 
