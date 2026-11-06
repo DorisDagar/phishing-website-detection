@@ -30,19 +30,73 @@ This project aims to develop a robust machine learning model capable of accurate
 
 ## 📊 Dataset
 
-**Dataset:** Phishing Websites Dataset
+### Dataset Overview
 
-**Source:** UCI Machine Learning Repository
+This project uses the **Zieni Dataset for Phishing Detection**, a publicly available dataset developed for machine learning-based phishing website classification.
 
-https://archive.ics.uci.edu/ml/datasets/phishing+websites
+- **Dataset Author:** Rasha Zieni
+- **Publication Date:** September 4, 2024
+- **Source:** [Mendeley Data](https://data.mendeley.com/datasets/8mcz8jsgnb/1)
+- **DOI:** [10.17632/8mcz8jsgnb.1](https://doi.org/10.17632/8mcz8jsgnb.1)
 
-### Dataset Summary
+The dataset contains features extracted from website URLs and their components to distinguish between phishing and legitimate websites.
 
-- **Number of Samples:** 11,055
-- **Number of Features:** 30
-- **Target Classes:**
-  - Legitimate Website
-  - Phishing Website
+### Original Dataset
+
+| Attribute | Value |
+|-----------|-------|
+| Total Samples | 10,000 |
+| Input Features | 74 |
+| Total Columns | 75 |
+| Target Column | `phishing` |
+| Legitimate Websites (0) | 5,000 |
+| Phishing Websites (1) | 5,000 |
+| Missing Values | 0 |
+| Duplicate Rows | 5,871 |
+| Feature Types | 70 numerical and 4 binary |
+
+### Data Cleaning and Preprocessing
+
+The following steps were performed:
+
+1. Loaded and examined the original dataset using Pandas.
+2. Inspected data types, missing values, duplicate records, and class distribution.
+3. Removed 5,871 duplicate rows.
+4. Retained 4,129 records after cleaning.
+5. Performed exploratory data analysis (EDA) to examine feature distributions and relationships.
+
+**Class Distribution After Cleaning:**
+
+| Class | Samples |
+|-------|---------|
+| Legitimate (0) | 1,066 |
+| Phishing (1) | 3,063 |
+| **Total** | **4,129** |
+
+The cleaned dataset became imbalanced after duplicate removal.
+
+### Feature Engineering and Selection
+
+Correlation-based feature selection was performed to reduce redundant input features.
+
+- Computed the absolute Pearson correlation matrix.
+- Used a correlation threshold of 0.80.
+- Identified and removed 18 highly correlated features.
+- Retained 56 input features for machine learning.
+
+### Final Dataset
+
+| Attribute | Value |
+|-----------|-------|
+| Total Records | 4,129 |
+| Input Features | 56 |
+| Target Column | `phishing` |
+| Total Columns | 57 |
+| Problem Type | Binary Classification |
+
+The engineered dataset was used for training, tuning, and evaluating six machine learning classification algorithms.
+
+An 80:20 stratified train-test split was used to preserve the class proportions in both datasets.
 
 ---
 
